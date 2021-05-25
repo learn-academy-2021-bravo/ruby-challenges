@@ -48,12 +48,33 @@
 
 # take a string a check it using the .reverse to see if they're the same
 
-def palindrome(string)
-    if string == string.reverse
-       p 'string is a palindrome'
-    else 
-       p 'string is not a palindrome'
-    end
-end         
+# def palindrome(string)
+#     if string == string.reverse
+#        p 'string is a palindrome'
+#     else 
+#        p 'string is not a palindrome'
+#     end
+# end         
 
-palindrome('mommy')
+# palindrome('mommy')
+
+# Create a username and password and check to make sure password and username are not the same, username and password must be 6 characters, password must contain !#$, username can not have !#$ or spaces, password can not equal password
+p 'Please enter user name'
+user_name = gets.chomp
+p 'Please enter a password'
+password = gets.chomp
+
+def check_user_password(user, pw)
+   if user.downcase == pw.downcase
+      p 'Username and Password are the same. Please enter different inputs.'
+   elsif user.length <6 || pw.length < 6
+      p 'Username and password both need to be 6 characters or more.'
+   elsif !pw.include?('!') && !pw.include?('$') && !pw.include?('#')  
+      p 'Password must include either a !, # or $ symbol'
+   elsif user.include?('!') || user.include?('$') || user.include?('#')  
+      p ' Username can not contain any special characters !, # or $'
+   end
+end
+
+
+check_user_password(user_name, password)
