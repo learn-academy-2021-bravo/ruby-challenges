@@ -1,4 +1,4 @@
 dividing number by zero gives an error  && diving zero by zero gives an error
 
-bang operator doesn't work using a mathmatical operation to store the value need to reassign with an equals
+bang operator doesn't work using a mathmatical operation to store the value need to reassign with an equal assignment
 
