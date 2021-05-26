@@ -6,9 +6,53 @@ airline = gets.chomp
 # we need to make a method 
 def travel_game airline_compony
     if airline_compony.downcase == 'delta'
-         'Congrats you are going to Europ'
+         puts 'Congrats you are going to Europe'
+         puts "
+            __.......__
+          ."           ".
+          :               :
+          :               :
+          `.._________..'
+               :   :
+               :   :
+               :   :
+               `...' mh
+         "
     elsif airline_compony.downcase == 'spirit'
-         'Congrats you are going to Bahams'
+         puts 'Congrats you are going to Bahams'
+         puts "
+          ___   ____  ____    __      _   _
+          (   \ (  _ \( ___)  /  \    / \_/ \                w
+          ) - ) )   / )__)  / () \  / /   \ \                                   
+          (___/ (_)\_)(____)(__)(__)(_)     (_)            
+                                        ##########
+                                        ###################
+                                   #############,,,,.....,;;                    
+                              ############,``  ,,,,...._ ''`,.''``.,         
+          _______________________############,`   ,'__,,,,,.;:
+          ,________
+                                        ,` ,'',,`` ,.,..,.  .,   . ,.  ``,    
+                                        ,`,' ,`  ,,`      |__| ',  ', `,   `,  
+                                        ,','  ; ,,`        |__|    ',  ', `,  ', 
+                                   :.'  .`,`          |__|       ', ',  ',  ; 
+                                        :`           |__|         ;  ;    ; ;
+                                   ___,,,---....___     |__|           ; ;     ;
+
+                         __,--''                ```-|__|,___        ;;'
+          ;
+                    _,-'                          |__|     ```--,,_;:
+          .
+                    ,'                             |__|              `',,      
+                    |                             |__|                   `',   
+               _      \,                            |__|                      `, 
+          | \.      \_                                                     ,`
+          |___\       `-,,._____                                Smiley 8P,'  
+                                   `'`'`'`'----,,.,,_____..,,,,-----`'`'`'`'   
+                                   __                                         
+                                   ./ |                               |\        
+                              ./   |                                         
+                              /_____|
+         "
     end
 end
 p travel_game airline
@@ -91,4 +135,4 @@ def uber_limo(transport_type, airline_company)
      
      
 end
-p uber_limo(transport,airline )
+p uber_limo(transport,airline)
