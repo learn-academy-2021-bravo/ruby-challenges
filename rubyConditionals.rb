@@ -98,10 +98,43 @@
 # end
 # p multiply_5 1..20
 
-arr = ['Apple', 'Avocado', 'Mango', 'Banana']
+# arr = ['Apple', 'Avocado', 'Mango', 'Banana']
 
-def return_first array 
-   array.select{|value| value.start_with? "M" }
+# def return_first array 
+#    array.select{|value| value.start_with? "M" }
+# end
+# p return_first(arr)
+
+arr = [13, 26, 39, 44, 22, 90, 0, -65, 10000, 765, 30]
+#  find max value in array
+# def max array 
+#    array.max (4) 
+# end
+# p max arr 
+
+# # find min value in array
+# def min array
+#    array.min  
+# end
+# p min arr
+
+# Create a method that takes in an array of numbers and returns only the odd numbers sorted from least to greatest.
+
+
+# def odd_least_greatest array 
+#     array.sort.select do |value|
+#       value.odd?
+#     end
+# end 
+# p odd_least_greatest arr
+
+# Create a method that takes in an array of strings and returns all the strings in reverse casing. All uppercased letters should be returned lowercased and all lowercased letters should be returned uppercased.
+
+string = ['hello', 'Time', ['Now'], 'WeIrD_tAlK']
+
+def down_caps array 
+   p array.upcase
 end
-p return_first(arr)
-
+ 
+p down_caps(string)
+      
