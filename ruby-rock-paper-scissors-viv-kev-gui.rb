@@ -11,9 +11,9 @@ user_one = gets.chomp
 p "User two: Enter 'Rock', 'Paper', or 'Scissors'"
 user_two = gets.chomp
 if user_one.downcase == 'rock' && user_two.downcase =='paper' || user_one.downcase == 'scissors' && user_two.downcase =='rock' || user_one.downcase == 'paper' && user_two.downcase =='scissors'
-    p 'User two is the winner chicken dinner'
+    p 'User Two You Are The Winner Chicken Dinner!'
 elsif user_two.downcase == 'rock' && user_one.downcase =='paper' || user_two.downcase == 'scissors' && user_one.downcase =='rock' || user_two.downcase == 'paper' && user_one.downcase =='scissors'
-    p 'User one is the winner chicken dinner'
+    p 'User One You Are The Winner Chicken Dinner!'
 else
     p 'draw'
 end
