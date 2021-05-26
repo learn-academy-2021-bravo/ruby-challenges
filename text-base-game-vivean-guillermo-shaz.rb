@@ -131,8 +131,24 @@ def uber_limo(transport_type, airline_company)
                        : :         __        .'                                           
                        :  `-------'  `------'                        dp
      "
+     elsif transport_type.downcase == 'uber' and airline_company.downcase == 'spirit'
+          puts 'Great! You are two hours early but you have to pay for your own meal. :['
+
+     elsif transport_type.downcase == 'limo' and airline_company.downcase == 'delta'
+          puts 'Oh no! you only have 30 minutes until your flight but you get a free meal served by a camel that may or may not spit in your food'
+
+     elsif transport_type.downcase == 'limo' and airline_company.downcase == 'spirit'
+          puts 'Oh no! you only have 30 minuts until your filght you have to pay for your own meal and the only option is a spit on spider'
+
+     else
+          return "You lost you get to stay home"
      end
+     
      
      
 end
 p uber_limo(transport,airline)
+#we're now inside the flight
+ #if in delta first class free everything 
+ #if in spirit youre uncomfortable and have to pay for everything
+#do you choose to have a  drink or take a nap?
