@@ -7,10 +7,10 @@ airline = gets.chomp
 # we need to make a method 
 def travel_game airline_compony
     if airline_compony.downcase == 'delta'
-         puts 'Congrats you are going to Europe'
+         'Congrats you are going to Europe'
        
     elsif airline_compony.downcase == 'spirit'
-         puts 'Congrats you are going to Bahams'
+         'Congrats you are going to Bahams'
         
     end
 end
@@ -25,16 +25,16 @@ transport = gets.chomp
 
 def uber_limo(transport_type, airline_company)
      if transport_type.downcase == 'uber' and airline_company.downcase == 'delta'
-          puts "AWESOME! You arrived at the airpot 2 hours early and you get a free meal served by Al Pucino"
+          "AWESOME! You arrived at the airpot 2 hours early and you get a free meal served by Al Pucino"
          
      elsif transport_type.downcase == 'uber' and airline_company.downcase == 'spirit'
-          puts 'Great! You are two hours early but you have to pay for your own meal. :['
+          'Great! You are two hours early but you have to pay for your own meal. :['
 
      elsif transport_type.downcase == 'limo' and airline_company.downcase == 'delta'
-          puts 'Oh no! you only have 30 minutes until your flight but you get a free meal served by a camel that may or may not spit in your food'
+          'Oh no! you only have 30 minutes until your flight but you get a free meal served by a camel that may or may not spit in your food'
 
      elsif transport_type.downcase == 'limo' and airline_company.downcase == 'spirit'
-          puts 'Oh no! you only have 30 minuts until your filght you have to pay for your own meal and the only option is a spit on spider'
+          'Oh no! you only have 30 minuts until your filght you have to pay for your own meal and the only option is a spit on spider'
 
      else
           return "You lost you get to stay home"
@@ -46,27 +46,44 @@ p uber_limo(transport,airline)
  #if in spirit youre uncomfortable and have to pay for everything
 #do you choose to have a  drink or take a nap?
 
-nap_or_drink = ""
-def in_flight airline_company 
+p 'Do you want a drink or take a nap'
+nap_or_drink = gets.chomp
+
+def in_flight(airline_company, nap_or_drink)
      if airline_company.downcase == 'delta'
           p 'Everything is free'
-          p 'Do you want a drink or take a nap'
-          nap_or_drink = gets.chomp
+          
           if nap_or_drink.downcase == 'drink'
-               p 'You get to party with Cher'
+               'You get to party with Cher'
           else 
-               p 'Sweet dreams'
+               'Sweet dreams'
           end
      elsif airline_company.downcase == 'spirit'
-          p 'Sucks for you!'
-          p 'Do you want a drink or take a nap'
-          nap_or_drink = gets.chomp
+          'Sucks for you!'
           if nap_or_drink.downcase == 'drink'
-               p 'Great! That will be a $100 and there is mandatory tip of 70%'
+               'Great! That will be a $100 and there is mandatory tip of 70%'
           else 
-               p 'Okay, great! That will be $20 and we take cash venmo or cash app'
+               'Okay, great! That will be $20 and we take cash venmo or cash app'
           end
      end
 end
-p in_flight airline
+p in_flight(airline, nap_or_drink)
 
+# spirit to crash on an island and stranded forever
+# delta - arrived at europe and they are king or Queen
+# nap_or_drink, airline
+def crash_landed(nap_drinks, airline_company)
+     if airline_company.downcase == 'delta' and nap_drinks.downcase == 'drink'
+          'There was an emergency landing on a beautiful island. You get unlimited more drinks and you are Queen/King and Cher is your bestfriend'
+     elsif airline_company.downcase == 'delta' and nap_drinks.downcase == 'nap'
+          'While you were napping, there was an emergency landing... A beatiful Queen/ King woke you up and now youre their Queen/King and unlimeted drinks!'
+     elsif airline_company.downcase == 'spirit' and nap_drinks.downcase == 'drink'
+          'You spilled your drink while the plane was crashing so that $100 fee. And we need 30 business days, not including weekends or holidays, to rescue you from the island.'
+     elsif airline_company.downcase == 'spirit' and nap_drinks.downcase == 'nap'
+          'you were napping while the plane was crashing, so you woke up dead on and island forever as a zombie!'
+     else
+          'try again next year'
+     end
+
+end
+p crash_landed(nap_or_drink, airline)
