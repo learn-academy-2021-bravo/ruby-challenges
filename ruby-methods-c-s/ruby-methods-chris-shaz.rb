@@ -40,7 +40,7 @@ password = gets.chomp
 p password
 
 def password_checker(userid, pass)
-    if userid == pass || pass == "password" || userid.include? ["!#$"]
+    if userid == pass || pass == "password" || userid.include? "!#$"
         "Invalid entry"
     elsif userid.length >= 6 && pass.length >= 6
        
