@@ -11,26 +11,26 @@
 # As a developer, I can print a sentence that tells me all of the colors in my palette.
 # As a developer, I can change one or more of the colors in my palette.
 
-class Task
-    def initialize(item1, item2)
-        @title = item1 
-        @description = item2
-    end
+# class Task
+#     def initialize(item1, item2)
+#         @title = item1 
+#         @description = item2
+#     end
 
-    def get_info
-       p @title
-       p @description
-    end
+#     def get_info
+#        p @title
+#        p @description
+#     end
 
-    def mark_done
-      @description = 'done'  
-    end
+#     def mark_done
+#       @description = 'done'  
+#     end
 
 
-end
+# end
 
-person_task = Task.new("clean up", "not done")
-person_task.get_info
-person_task.mark_done
-person_task.get_info
+# person_task = Task.new("clean up", "not done")
+# person_task.get_info
+# person_task.mark_done
+# person_task.get_info
 

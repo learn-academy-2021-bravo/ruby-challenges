@@ -48,12 +48,12 @@
 
 # take a string a check it using the .reverse to see if they're the same
 
-def palindrome(string)
-    if string == string.reverse
-       p 'string is a palindrome'
-    else 
-       p 'string is not a palindrome'
-    end
-end         
+# def palindrome(string)
+#     if string == string.reverse
+#        p 'string is a palindrome'
+#     else 
+#        p 'string is not a palindrome'
+#     end
+# end         
 
-palindrome('mommy')
+# palindrome('mommy')
