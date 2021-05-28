@@ -1,19 +1,47 @@
 
 
 class AnimalMaker 
-    attr_accessor :type, :breed, :color, :alive
-    def initialize(type, breed, color)
-        @type = type
-        @breed = breed
-        @color = color
-        
-# Story: As a developer, upon initialization, I can give my Animal a status of alive, which will be set to true.  
-        @alive = true
+    attr_accessor :alive, :age
+    def initialize
+       @age = 0
+       @alive = true
+
+    end
+    def age_adder 
+        @age = @age+1
+
     end
 end
-maker = AnimalMaker.new("dog", "pitbull", "black")
-p maker
+# maker = AnimalMaker.new
+# maker.age_adder
+# maker.age_adder
+# maker.age_adder
+# maker.age_adder
+# p maker
 
+    class Fish < AnimalMaker
+        attr_accessor :blood
+        def initialize
+           super
+
+           @blood = "cold blooded" 
+        end
+    end
+my_fish = Fish.new
+p my_fish.blood
+
+class Salmon < Fish 
+  def initialize(fin)
+    super(blood)
+    @fin = "fin" 
+
+  end
+
+end
+my_salmon = Salmon.new
+p my_salmon.blood 
+# Story: As a developer, upon initialization, I can give my Animal a status of alive, which will be set to true.  
+        
 # Story: As a developer, I can give my Animal an age of 0 upon creation.
 
 # Story: As a developer, I can age my Animal up one year at a time.
