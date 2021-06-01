@@ -1,8 +1,6 @@
 class Task
-    attr_accessor :name
+    attr_accessor :name, :description
 
-    def initialize name = 'homework'
-        @name = name
+ 
 
-    end
 end
