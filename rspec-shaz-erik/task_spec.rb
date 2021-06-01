@@ -28,6 +28,14 @@ describe "Task" do
         expect(task_two.description).to be_a String
         p task_two
     end
-    
+
+    it "can check status of task" do
+        task_two.status = "done"
+        expect(task_two.status).to be_a String
+    end
+
+    it "check if status is done" do
+        task_two.is_done task_two.status
+    end
     
 end
