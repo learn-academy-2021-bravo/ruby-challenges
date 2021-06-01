@@ -48,12 +48,93 @@
 
 # take a string a check it using the .reverse to see if they're the same
 
-def palindrome(string)
-    if string == string.reverse
-       p 'string is a palindrome'
-    else 
-       p 'string is not a palindrome'
-    end
-end         
+# def palindrome(string)
+#     if string == string.reverse
+#        p 'string is a palindrome'
+#     else 
+#        p 'string is not a palindrome'
+#     end
+# end         
 
-palindrome('mommy')
+# palindrome('mommy')
+
+# Create a username and password and check to make sure password and username are not the same, username and password must be 6 characters, password must contain !#$, username can not have !#$ or spaces, password can not equal password
+# p 'Please enter user name'
+# user_name = gets.chomp
+# p 'Please enter a password'
+# password = gets.chomp
+
+# def check_user_password(user, pw)
+#    if user.downcase == pw.downcase
+#       p 'Username and Password are the same. Please enter different inputs.'
+#    elsif user.length <6 || pw.length < 6
+#       p 'Username and password both need to be 6 characters or more.'
+#    elsif !pw.include?('!') && !pw.include?('$') && !pw.include?('#')  
+#       p 'Password must include either a !, # or $ symbol'
+#    elsif user.include?('!') || user.include?('$') || user.include?('#')  
+#       p ' Username can not contain any special characters !, # or $'
+#    end
+# end
+
+
+# check_user_password(user_name, password)
+
+# Blocks and Iterables
+
+# range = 1..20
+# range.each do |value|
+#    p value
+# end
+
+# range = 1..20
+# def is_even array
+# array.select {|value| value.even?}
+# end
+# even_array = is_even(range)
+# p even_array.reverse
+
+# def multiply_5 array 
+#    array.map{|value| value*5}
+# end
+# p multiply_5 1..20
+
+# arr = ['Apple', 'Avocado', 'Mango', 'Banana']
+
+# def return_first array 
+#    array.select{|value| value.start_with? "M" }
+# end
+# p return_first(arr)
+
+arr = [13, 26, 39, 44, 22, 90, 0, -65, 10000, 765, 30]
+#  find max value in array
+# def max array 
+#    array.max (4) 
+# end
+# p max arr 
+
+# # find min value in array
+# def min array
+#    array.min  
+# end
+# p min arr
+
+# Create a method that takes in an array of numbers and returns only the odd numbers sorted from least to greatest.
+
+
+# def odd_least_greatest array 
+#     array.sort.select do |value|
+#       value.odd?
+#     end
+# end 
+# p odd_least_greatest arr
+
+# Create a method that takes in an array of strings and returns all the strings in reverse casing. All uppercased letters should be returned lowercased and all lowercased letters should be returned uppercased.
+
+string = ['hello', 'Time', ['Now'], 'WeIrD_tAlK']
+
+def down_caps array 
+   p array.upcase
+end
+ 
+p down_caps(string)
+      
